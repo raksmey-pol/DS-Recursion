@@ -48,4 +48,14 @@ public class RecursiveSolution {
         }
         return charExists(str.substring(1), ch);
     }
+
+    public int uniquePaths(int n, int m) {
+        // Base case: If either row or column is 1, there is only one path
+        if (n == 1 || m == 1) {
+            return 1;
+        }
+
+        // Recursive case: Sum of paths by moving right and moving down
+        return uniquePaths(n - 1, m) + uniquePaths(n, m - 1);
+    }
 }
