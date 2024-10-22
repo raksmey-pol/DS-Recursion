@@ -7,6 +7,9 @@ public class Main {
         System.out.println(rSolution.fibonacciNth(13));
         rSolution.reverseString("null");
 
-        System.out.println(rSolution.charExists("null", '1'));
+        System.out.println(rSolution.charExists("null", 'u'));
+        int n = 3, m = 3;
+        int result = rSolution.uniquePaths(n, m);
+        System.out.println("Number of unique paths: " + result);
     }
 }
