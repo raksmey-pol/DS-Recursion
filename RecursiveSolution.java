@@ -49,6 +49,13 @@ public class RecursiveSolution {
         return charExists(str.substring(1), ch);
     }
 
+    public int gcd(int n, int m) {
+        if (m == 0) {
+            return n;
+        }
+        return gcd(m, n % m);
+    }
+
     public int uniquePaths(int n, int m) {
         // Base case: If either row or column is 1, there is only one path
         if (n == 1 || m == 1) {
